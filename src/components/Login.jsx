@@ -1,10 +1,12 @@
+import "../index.css"
+
 export function Login() {
     return (
         <div>
             <img src="../assets/logo tcc-black 1.png" alt="" />
 
             <form action="">
-                <label>Login</label>
+                <label class>Login</label>
                 <input type="email" placeholder="Email ou telefone" required />
 
                 <label>Senha</label>
@@ -15,9 +17,12 @@ export function Login() {
 
                 <button>Login</button>
 
-                <a href="#">Esqueceu a senha?</a>
+                <div id="ancoras">
+                    <a href="#">Esqueceu a senha?</a>
 
-                <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                    <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                </div>
+                
             </form>
         </div>
     )
